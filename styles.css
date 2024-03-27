@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit Mono&display=swap");
+
+:root {
+  --primary-color: #848d97;
+  --secondary-color: #e5edf2;
+  --bg-color: #0e1117;
+  --font-family: "Reddit Mono", monospace;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.6;
+  text-align: center;
+}
+.twitter-link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+svg {
+  height: 1.2em;
+  width: 1.2em;
+}
+
+path {
+  fill: var(--primary-color);
+}
+
+main {
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 800px;
+}
+h1 {
+  color: var(--secondary-color);
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+}
